@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero_section{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:  column;
+    position: relative;
+}
+.hero_section .text{
+    /* text-align: center; */
+    width: 600px;
+}
+.hero_section h1{
+    z-index: 5;
+    /* text-wrap: wrap; */
+    position: relative;
+    text-align: center;
+}
+ .blur_bg_container .circle{
+    width: 200px;
+    height: 150px;
+    background-color: lightgreen;
+    border-radius: 50%;
+}
+ .blur_bg_container .circle:nth-child(1){
+    background-color: orange;
+    z-index: 2;
+}
+ .blur_bg_container .circle:nth-child(2){
+    background-color: lightgreen;
+    width: 250px;
+    height: 300px;
+}
+ .blur_bg_container .circle:nth-child(3){
+    background-color: royalblue;
+}
+.blur_bg_container .circle:nth-child(4){
+    background-color: crimson;
+}
+ .blur_bg_container{
+    display: flex;
+    gap: 20px;
+    filter: blur(120px);
+    position: absolute;
+    z-index: 5;
+}
